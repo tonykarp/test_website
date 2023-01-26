@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>3 Column Layout</title>
+   <link rel="stylesheet" href="assets/css/layout.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+<header class="header">
+  <header class="header"><p><img class="icon" src="public/images/vector-marketing-statics-icon.jpg"> Header...</p></header>
+
+</header>
+<div class="container">
+   <main class="center column">
+       <article>
+           <h1>Slider</h1>
+           <button class="slider__button hideSlider" id="show-hide" onclick="Slider.hideSlider()">Hide</button>
+           <button class="slider__button" id="start" >Start</button>
+           <div id="slider">
+            </div>
+
+            <button class="slider__button prev" id="slider__prev" >Prev</button>
+            <button class="slider__button next" id="slider__next">Next</button>
+
+
+       </article>
+   </main>
+   <nav class="left column">
+       <h3>Left heading</h3>
+       <ul>
+           <li><a href="index.html">Main</a></li>
+           <li><a href="contact.html">Contact</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="slider.html">Slider</a></li>
+           <li><a href="media.html">Media</a></li>
+           <li><a href="table.html">Table</a></li>
+
+       </ul>
+   </nav>
+   <div class="right column">
+       <h3>Right heading</h3>
+       <p></p>
+   </div>
+   <div class="push"></div>
+</div>
+<div class="footer-wrapper">
+  <footer class="footer">
+    <footer class="footer"><p><img class="icon" src="public/images/vector-marketing-statics-icon.jpg"> Footer...</p></footer>
+
+  </footer>
+</div>
+
+<script src="assets/js/script.js"></script> 
+<script>
+
+   window.onload = function() {
+       let slides = [
+           {
+               title: "Google",
+               background: "public/images/white.png",
+               link: "http://google.com"
+           }, {
+               title: "Yahoo",
+               background: "public/images/blue.jpg",
+               link: "http://yahoo.com"
+           }, {
+               title: "Youtube",
+               background: "public/images/red.jpg",
+               link: "http://youtube.com"
+           }
+       ]
+       Slider.initSlider(slides);
+   };
+    
+</script>
+
+</body>
+</html>
+
